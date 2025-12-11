@@ -1,0 +1,7 @@
+{
+  "name": "SoundFlow Studio",
+  "description": "A full-stack SaaS dashboard for audio management, playlist creation, and audio insights.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundFlow Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              background: '#09090b',
+              foreground: '#fafafa',
+              card: '#18181b',
+              'card-foreground': '#fafafa',
+              popover: '#18181b',
+              'popover-foreground': '#fafafa',
+              primary: '#6366f1', // Indigo 500
+              'primary-foreground': '#ffffff',
+              secondary: '#27272a',
+              'secondary-foreground': '#fafafa',
+              muted: '#27272a',
+              'muted-foreground': '#a1a1aa',
+              accent: '#27272a',
+              'accent-foreground': '#fafafa',
+              destructive: '#ef4444',
+              'destructive-foreground': '#fafafa',
+              border: '#27272a',
+              input: '#27272a',
+              ring: '#6366f1',
+            },
+            borderRadius: {
+              lg: '0.5rem',
+              md: 'calc(0.5rem - 2px)',
+              sm: 'calc(0.5rem - 4px)',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #09090b;
+        color: #fafafa;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #18181b; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3f3f46; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #52525b; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "@tanstack/react-query": "https://esm.sh/@tanstack/react-query@^5.90.12",
+    "wavesurfer.js": "https://esm.sh/wavesurfer.js@^7.12.1",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
